@@ -62,6 +62,8 @@ $(document).ready(function() {
 				let json = JSON.parse(this.response);
 				questions = json.results;
 
+				clearCanvas();
+
 				if(questions.length < 1) {
 					let failPar = document.createElement("p");
 					failPar.innerHTML = "No questions available. Please try another difficulty or question type.";
