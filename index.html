@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Trivia Quiz Website</title>
+		<meta charset="utf-8"> 
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="style.css">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+		<script src="script.js"></script>
+	</head>
+	<body>
+		<div class="container">
+			<h1>How Much Do You Know?</h1>
+			<div id="questions_filter">
+				<p>Pick a topic, level of diffculty, and type of question...</p>
+				<span>Topic:</span>
+				<select id="topic" name="topic" class="form-control" required>
+					<option value="9" selected>General Knowledge</option>
+					<option value="27">Animals</option>
+					<option value="11">Entertainment: Film</option>
+					<option value="31">Entertainment: Japanese Anime and Manga</option>
+					<option value="15">Entertainment: Video Games</option>
+					<option value="22">Geography</option>
+					<option value="23">History</option>
+					<option value="20">Mythology</option>
+					<option value="17">Science and Nature</option>
+					<option value="21">Sports</option>
+				</select><br/>
+
+				<span>Difficulty:</span>
+				<select id="difficulty" name="difficulty" class="form-control" required>
+					<option value="easy" selected>Easy</option>
+					<option value="medium">Medium</option>
+					<option value="hard">Hard</option>
+				</select><br/>
+
+				<span>Type:</span>
+				<div class="form-check">
+					<input type="radio" name="type" value="multiple" class="form-check-input" required checked>
+					<span>Multiple Choice</span>
+				</div>
+				<div class="form-check">
+					<input type="radio" name="type" value="boolean" class="form-check-input"><span>True / False</span>
+				</div>
+			</div>
+			
+			<div id="form_parent_div">
+				<form id="form"></form>
+			</div>
+			
+		</div>
+
+		<footer>
+			<hr/>
+		</footer>
+	</body>
+</html>
